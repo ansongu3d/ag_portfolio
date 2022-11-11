@@ -103,11 +103,11 @@ select:focus {
 }
 
 p.success {
-  color: green;
+  color: rgb(234, 250, 234);
 }
 
 p.danger {
-  color: red;
+  color: rgb(252, 192, 192);
 }
 /************ Navbar Css ************/
 nav.navbar {

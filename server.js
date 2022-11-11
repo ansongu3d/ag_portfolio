@@ -2,21 +2,20 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 // server used to send send emails
 const app = express();
-app.use(cors());
+const port = process.env.PORT || 3000;
+
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
+app.use(express.static("./build"));
 
 const contactEmail = nodemailer.createTransport({
   service: "outlook",
   auth: {
     user: "ag_syd_dev@outlook.com",
-    pass: "",
+    pass: process.env.secretPass,
   },
 });
 
@@ -28,7 +27,7 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+app.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
@@ -50,3 +49,13 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+
+app.get("*", (req, res) => {
+  res.setHeader("content-type", "text/html");
+  fs.createReadStream(`${__dirname}/build/index.html`).pipe(res);
+});
+
+app.listen(port, () => console.log("Server Running"));
+console.log(process.env.EMAIL_USER);
+console.log(process.env.EMAIL_PASS);

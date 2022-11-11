@@ -1,4 +1,4 @@
-# Personal Portfolio Website in React
+# Anson Gu Portfolio Website in React
 
 Built using:
 
