@@ -15,7 +15,7 @@ const contactEmail = nodemailer.createTransport({
   service: "outlook",
   auth: {
     user: "ag_syd_dev@outlook.com",
-    pass: process.env.secretPass,
+    pass: "Mydogisu1682",
   },
 });
 
