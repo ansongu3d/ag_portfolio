@@ -45,7 +45,7 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Full Stack Develepment & Creative Design!
+                Full Stack Development & Creative Design!
               </p>
               <Carousel
                 responsive={responsive}
