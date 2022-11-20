@@ -75,7 +75,7 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I have been working in design for almost 12 years, and I am
+                    I have been working in design for almost 14 years, and I am
                     now planning a transition into software engineering.
                     Although successful in my design career, I have realised the
                     aspects of my work I find most rewarding are all in design

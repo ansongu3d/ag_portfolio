@@ -43,31 +43,43 @@ export const Projects = () => {
       title: "Puma 50 Yrs Window Display",
       description: "Industrial Design",
       imgUrl: proj2Img1,
+      clickLink: "",
+      gitLink: "",
     },
     {
       title: "Samsung JBHIFI Display",
       description: "Industrial Design",
       imgUrl: proj2Img2,
+      clickLink: "",
+      gitLink: "",
     },
     {
       title: "Helly Hansen Display",
       description: "Industrial Design",
       imgUrl: proj2Img3,
+      clickLink: "",
+      gitLink: "",
     },
     {
       title: "Kinder Xmas Tree Display",
       description: "Industrial Design",
       imgUrl: proj2Img4,
+      clickLink: "",
+      gitLink: "",
     },
     {
       title: "Kinder Train Display",
       description: "Industrial Design",
       imgUrl: proj2Img5,
+      clickLink: "",
+      gitLink: "",
     },
     {
       title: "Kinder Castle Display",
       description: "Industrial Design",
       imgUrl: proj2Img6,
+      clickLink: "",
+      gitLink: "",
     },
   ];
   const projects3 = [
@@ -76,6 +88,7 @@ export const Projects = () => {
       description: "Game Development",
       imgUrl: proj3Img1,
       clickLink: "https://ansongu3d.github.io/wordler/",
+      gitLink: "",
     },
   ];
 
