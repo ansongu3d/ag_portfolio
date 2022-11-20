@@ -11,7 +11,7 @@ export const ProjectCard = ({ title, description, imgUrl, clickLink }) => {
               {title}
             </a>
           </h4>
-          <span>{description}</span>
+          <span><a className="project-link" href={gitLink}>{description}</a></span>
         </div>
       </div>
     </Col>

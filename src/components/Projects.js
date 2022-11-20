@@ -18,21 +18,24 @@ export const Projects = () => {
   const projects1 = [
     {
       title: "Transformer Collection",
-      description: "Design & Development",
+      description: "GitHub",
       imgUrl: projImg1,
       clickLink: "https://rocky-headland-06164.herokuapp.com/",
+      gitLink: "https://github.com/ansongu3d/fullstack_site",
     },
     {
       title: "Sydney Fishing Herald",
-      description: "Design & Development",
+      description: "GitHub",
       imgUrl: projImg2,
       clickLink: "https://fast-tor-14073.herokuapp.com/",
+      gitLink: "https://github.com/ansongu3d/sydneyFishHerald",
     },
     {
       title: "Trivia Lab",
-      description: "Design & Development",
+      description: "GitHub",
       imgUrl: projImg3,
       clickLink: "https://trivia-night01-app.herokuapp.com/",
+      gitLink: "https://github.com/annpham11/Project-3",
     },
   ];
   const projects2 = [
